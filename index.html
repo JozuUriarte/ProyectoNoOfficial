@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Pagina Principal</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <img src="media/logoGusto.png" alt="logoRestaurante">
+            <li><a href="novedades.html" >Novedades</a></li>
+            <li><a href="resderva.html" >Eventos</a></li>
+            <li><a href="reserva1.html" >Reservas</a></li>
+            <li><a href="sobre_nostros.html" >Sobre Nosotros</a></li>
+            <li><a href="menu.html" >Menu</a></li>
+            <li><a href="index.html" >Inicio</a></li>
+        </ul>
+    </nav>
+    <!--ESTE ES EL CAROUSEL-->
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          
+          <img src="media/bannerUno.jpg" style="width:100%;height: 900px;">
+          <div class="text">Cualquiera puede cosinar</div>
+        </div>
+        
+        <div class="mySlides fade">
+          
+          <img src="media/bannerDos.jpg" style="width:100%;height: 900px;">
+          <div class="text">Ustedes simpre tendran la razon los clientes</div>
+        </div>
+        
+        <div class="mySlides fade">
+          
+          <img src="media/bannerTres.jpg"style="width:100%;height: 900px;">
+          <div class="text">Ambien para relajarse y comer a gustos</div>
+        </div>
+        
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+        
+    </div>
+    <br>
+     
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span> 
+      <span class="dot" onclick="currentSlide(2)"></span> 
+      <span class="dot" onclick="currentSlide(3)"></span> 
+    </div>
+<!--ESTOS SON LOS CARDS-->
+    <section class="cards">
+      <div class="card">
+        <div class="card_img">
+          <img src="media/cosinarestauranteUno.jpg" alt="">
+        </div>
+        <div class="card_texts">
+          <h2 class="card_title">CHEFS</h2>
+          <p class="card_paragraph">Contamos con los mejores chefs de la ciudad, expertos en la gastronomia nacional e internacional.</p>
+        </div>
+      </div>
+    
+    
+        <div class="card">
+          <div class="card_img">
+            <img src="media/cocteleriaUno.jpg" alt="">
+          </div>
+          <div class="card_texts">
+            <h2 class="card_title">Cocteleria</h2>
+            <p class="card_paragraph">No puede faltar un espacio para el bar donde podras disfrutar de una barra libre y asi mismo el mejor bartender atendiendo todos tus caprichos.</p>
+          </div>
+        </div>
+    
+        <div class="card">
+          <div class="card_img">
+            <img src="media/musicarestauranteUno.jpg" alt="">
+          </div>
+          <div class="card_texts">
+            <h2 class="card_title">Musica</h2>
+            <p class="card_paragraph">La musica es algo que no puede faltar contamos con la mejor musica clasica, y tambien cada viernes, sabado y domingo con artistas invitados</p>
+          </div>
+        </div>
+    </section>
+<!--ESTO ES EL FOOTER-->
+
+    <footer class="pie-pagina">
+      <div class="grupo-1">
+        <div class="box">
+          <figure>
+            <a href="#">
+              <img src="media/logoGusto.png" alt="Logo de Slle">
+            </a>
+          </figure>
+        </div>
+        <div class="box">
+          <h2>SOBRE NOSOTROS</h2>
+          <p>Somos un restaurante de primera categoria.</p>
+          <p>Nuestro lema de empleados es que el cliente siempre tendra la razon y Gusto de paladar</p>
+        </div>
+        <div class="box">
+          <h2>SIGUENOS</h2>
+          <div class="red-social">
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-instagram"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-youtube"></a>
+            <a href="#" class="fab fa-tiktok"></a>
+          </div>
+        </div>
+      </div>
+      <div class="grupo-2">
+        <small>&copy; 2024 <b>GUSTEAU'S</b> - Todos los derechos reservados</small>
+      </div>
+
+
+    </footer>
+
+
+    <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+    <script src="jv/script.js"></script>
+
+</body>
+</html>

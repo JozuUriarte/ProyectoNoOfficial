@@ -1,0 +1,304 @@
+body {
+    font-family: 'Arial', sans-serif; /* Fuente general del cuerpo */
+    background-color: #f5f0b6; /* Color de fondo */
+    margin: 0;
+    padding: 0;
+    
+    background-size: cover; /* Para cubrir toda la pantalla */
+    background-position: center;
+}
+
+
+/*barra*/
+nav {
+    z-index: 10; /* Asegura que el nav esté por encima del carrusel */
+    background-color: rgba(0, 0, 0, 0.8); /* Fondo semitransparente */
+    position: fixed; /* Mantener el nav fijo en la parte superior */
+    top: 0;
+    width: 100%;
+    height: 100px; /* Altura del nav */
+  }
+  nav ul img{
+    width: 100px;
+    height: 80px;
+    margin-left: 50px;
+    margin-top: 10px;
+    float: left;
+  }
+  ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+    opacity: 1.5;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100px;
+  }
+  li{
+    float: right;
+  }
+  li a{
+    display: block;
+    color: white;
+    text-align: center;
+  
+    padding: 40px 40px 40px 40px;
+    
+    text-decoration: none;
+  }
+  li a:hover:not(.active){
+    background-color: #111;
+    border-radius: 100px;
+  }
+  nav .active{
+    border-radius: 100px;
+    background-color: #091857;
+  }
+  /*ESTO ES EL FOOTER*/
+  .pie-pagina{
+    width: 100%;
+    background-color: #000000;
+  }
+  .pie-pagina .grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+  }
+  .pie-pagina .grupo-1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .pie-pagina .grupo-1 .box figure img{
+    width: 250px;
+  }
+  .pie-pagina .grupo-1 .box h2{
+    color: white;
+    margin-bottom: 25px;
+    font-size: 20px;
+  }
+  .pie-pagina .grupo-1 .box p{
+    color: #efefef;
+    margin-bottom: 10px;
+  }
+  .pie-pagina .grupo-1 .red-social a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #f2f2f2;
+    margin-right: 10px;
+    background-color: #0d2033;
+    text-align: center;
+    transition: all 300ms ease;
+  }
+  .pie-pagina .grupo-1 .red-social a:hover{
+    color: rgb(7, 52, 173);
+  }
+  .pie-pagina .grupo-2{
+    background-color: #000000;
+    padding: 15px 10px;
+    text-align: center;
+    color: white;
+  }
+  .pie-pagina .grupo-2 small{
+    font-size: 15px;
+  }
+  @media screen and (max-width:800px){
+    .pie-pagina .grupo-1{
+      width: 90%;
+      grid-template-columns: repeat(1,1fr);
+      grid-gap: 30px;
+      padding: 35px 0px;
+    }
+  }
+/*informacion1*/
+.infs{
+    width: 100%;
+    
+    height: 300px;
+    margin-top: 10px;
+    background-color: rgb(10, 67, 31);   
+}
+
+@keyframes textColorChange{
+    0%{ color: yellow; }
+    50%{ color: rgb(12, 105, 34); }
+    100%{ color: yellow;}
+}
+.infs h1{
+    background-image: url(media/jardin.jpg);
+    background-size: cover; /* Para cubrir toda la pantalla */
+    background-position: center; /* Centrar la imagen */
+    font-family: 'Playfair Display', serif; /* Fuente elegante para el título */
+    font-size: 220px; /* Tamaño del título */
+    text-align: center; /* Alinear al centro */
+    color: #4e0a60; /* Color del texto */
+    margin-top: 50px; /* Espacio superior */
+    width: 100%;
+    height: 300PX;
+    animation: textColorChange 3s infinite;
+}
+/*cartas1*/
+.cards .card{
+    margin-top: 70px;
+    width: 95%;
+    background-color: aqua;
+    margin: 2%;
+    height: 300px;
+}
+.cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+/*titulo de cartas, par error le puse cartas 3 xDDDDD*/
+
+.cards3 .card3{
+    margin-top: 40px;
+    margin: 10px;
+    width: 95%;
+    height: 100px;
+    background-color: rgb(16, 16, 88);
+    
+    
+}
+.cards3{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.cards3 h2{
+    color: #f5f0b6;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    font-size: 230%;
+    
+}
+
+
+/*titulo 2*/
+.infs2{
+    margin-top: 5px;
+    width: 40%;
+    height: 100px;
+    margin-top: 15px;
+    background-color:  #ff0000;   
+    margin-left: 30%;
+    margin-right: 30%;
+}
+.infs2 h1{
+    background-image: url('media/madera.jpg'); /* Cambia la ruta según sea necesario */
+    
+    background-size: cover; /* Para cubrir toda la pantalla */
+    background-position: center; /* Centrar la imagen */
+    font-family: 'Playfair Display', serif; /* Fuente elegante para el título */
+    font-size: 60px; /* Tamaño del título */
+    text-align: center; /* Alinear al centro */
+    color: #ffbd4a; /* Color del texto */
+    height: 100px;
+    margin-top: 15px;
+    
+}
+/*cartas 2*/
+.cards2 .card2{
+    width: 95%;
+    
+    background-color: rgb(29, 57, 160);
+    margin: 10px;
+    height: 400px;
+}
+
+.cards2{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+/*transcicion*/
+.card2 {
+    
+    overflow: hidden;
+    position: relative;
+}
+.card2 img {
+    margin: 10px;
+    width: 95%;
+    height: 200px;
+    transition: opacity 0.3s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.card2 p{
+    margin: 7px;
+    color: #f5f0b6;
+    margin-top: 46%;
+}
+
+.card2 img.second {
+    opacity: 0; /* Comienza oculta */
+}
+.card2:hover img.first {
+    opacity: 0; /* Oculta la primera imagen */
+}
+.card2:hover img.second {
+    opacity: 1; /* Muestra la segunda imagen */
+}
+/*modal-----------------------------*/
+.card img {
+    width: 100%;
+    
+    border-radius: 5px;
+    
+}
+  
+.modal {
+    display: none; /* Oculto por defecto */
+    position: fixed; /* Posicionado sobre la pantalla */
+    z-index: 1; /* Se coloca sobre otros elementos */
+    left: 0;
+    top: 0;
+    width: 100%; /* Ancho completo */
+    height: 100%; /* Alto completo */
+    overflow: auto; /* Habilita scroll si es necesario */
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro */
+  }
+  
+.modal-content {
+    background-color: #000000;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%; /* Ancho del modal */
+    max-width: 600px; /* Ancho máximo */
+    height: 300px; /* Alto máximo */
+    overflow-y: auto; /* Habilita scroll vertical si es necesario */
+    color: #ffbd4a;
+}
+  
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+  
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+/*footer*/
+
