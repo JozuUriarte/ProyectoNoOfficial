@@ -567,3 +567,47 @@ img {vertical-align: middle;}
   color: #808080;
   font-size: 0.8em;
 }
+/*ESTO ES RESERVAS(PARTE DE MIGUEL)*/
+/*formulario*/
+.infs{
+  background-color: rgb(255, 255, 255);
+}
+.container-form{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+  margin-top: 80px;
+  padding-bottom: 100px;
+}
+.container-form .formulario{
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 50px;
+  width: 48%; /* Ajusta el ancho según sea necesario */
+  background-color: white;
+  margin-top: 80px;  
+  margin-left: auto;
+  margin-right: auto;
+}
+.container-form .formulario label{
+  display: block;
+  margin: 10px 0 5px;
+}
+.container-form .formulario input, select, textarea{
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.container-form .formulario button{
+  width: 100%;
+  padding: 10px;
+  background-color: #860f15;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.container-form .formulario button:hover {
+  background-color: #002508;
+}

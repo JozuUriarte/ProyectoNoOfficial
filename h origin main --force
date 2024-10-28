@@ -1,0 +1,154 @@
+[33mcommit 76923a7ee2879a343cff1c692d0c48eba58d71ff[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: jozu <josuriarte60@gmail.com>
+Date:   Sun Oct 27 21:18:48 2024 -0400
+
+    hola prueba numero 100
+
+M	new.html
+
+[33mcommit c806f98171f49e172c93fe8536047d469a2d5283[m
+Author: jozu <josuriarte60@gmail.com>
+Date:   Sun Oct 27 21:17:42 2024 -0400
+
+    hola de nuevo
+
+M	new.html
+
+[33mcommit f777ac1c42ed05a1d0d379b19fab89e92b2b2513[m
+Author: jozu <josuriarte60@gmail.com>
+Date:   Sat Oct 26 15:55:01 2024 -0400
+
+    jose
+
+M	new.html
+
+[33mcommit a83c317dd6a608148481723ffe699ef68d1132c1[m
+Author: jozu <josuriarte60@gmail.com>
+Date:   Sat Oct 26 15:52:34 2024 -0400
+
+    prueba po
+
+A	new.html
+
+[33mcommit e7f0bfc754edf945bd2c5a65e414c78127596172[m
+Author: JozuUriarte <161413033+JozuUriarte@users.noreply.github.com>
+Date:   Thu Oct 24 10:13:13 2024 -0400
+
+    Update README.md
+
+M	README.md
+
+[33mcommit aad0050c65dd00bbb4c4eaf5a331902475a7d169[m
+Author: JozuUriarte <161413033+JozuUriarte@users.noreply.github.com>
+Date:   Thu Oct 24 10:06:24 2024 -0400
+
+    Add files via upload
+
+A	css/style.css
+A	events.js
+A	index.html
+A	jv/comentario.js
+A	jv/modal.js
+A	jv/script.js
+A	media/Menu/agua.jpeg
+A	media/Menu/boliviaDos.jpg
+A	media/Menu/boliviaTres.jpg
+A	media/Menu/boliviaUno.jpg
+A	media/Menu/cafe.jpg
+A	media/Menu/cocacola.jpg
+A	media/Menu/coctelazul.jpg
+A	media/Menu/cokaquina.jpg
+A	media/Menu/comboDos.jpg
+A	media/Menu/comboTres.jpg
+A	media/Menu/comboUno.jpeg
+A	media/Menu/frappe.jpg
+A	media/Menu/irisstew.jpg
+A	media/Menu/jugoMaracuya.jpg
+A	media/Menu/jugoNaranja.jpg
+A	"media/Menu/jugoPi\303\261a.jpg"
+A	media/Menu/labandera.jpg
+A	media/Menu/margarita.jpg
+A	media/Menu/mojito.jpg
+A	media/Menu/padthai.jpg
+A	media/Menu/pepsi.jpg
+A	media/Menu/snackDos.jpg
+A	media/Menu/snackTres.jpg
+A	media/Menu/snackUno.jpg
+A	media/Menu/te.jpeg
+A	media/anciano.jpg
+A	media/bannerDos.jpg
+A	media/bannerTres.jpg
+A	media/bannerUno.jpg
+A	media/bebidasnuevas.jpg
+A	media/blackfriday.jpg
+A	media/boda11.webp
+A	media/boda222.jpg
+A	media/boda333.jpg
+A	media/bodas.jpg
+A	media/cartel.avif
+A	media/cartel.png
+A	media/cartellll.png
+A	media/cenadehalloween.jpeg
+A	media/cocteleriaUno.jpg
+A	media/combo-05.webp
+A	media/corp.jpg
+A	media/cortesia.jpg!d
+A	media/cosinarestauranteUno.jpg
+A	"media/cumpleaa\303\261osevent.jpg"
+A	media/ego.jpeg
+A	media/fondobd.avif
+A	media/foondoo.jpg
+A	media/giffff.webp
+A	media/gusto1.jpg
+A	media/gusto2.jpg
+A	media/gusto3.webp
+A	media/gusto4.jpg
+A	media/halloweenoffer.avif
+A	media/happy.gif
+A	media/jardin.jpg
+A	media/juguete.webp
+A	media/kids.jpg
+A	media/kratos.jpg
+A	media/la-gran-fiesta.jpg
+A	media/lenguasuegra.jpg
+A	media/like.png
+A	media/logoGusto.png
+A	media/madera.jpg
+A	media/martes-hosteleria.jpg
+A	media/menuhalloween.jpg
+A	media/musicarestauranteUno.jpg
+A	media/negociopag.webp
+A	media/novedades.png
+A	media/pngaaa.com-2795547.png
+A	media/pngwing.com (2).png
+A	media/pngwing.com (3).png
+A	media/pngwing.com (4).png
+A	media/pngwing.com.png
+A	media/salamanca.jpeg
+A	media/salon11.jpg
+A	media/salon22.jpg
+A	media/salonjuegos.jpg
+A	media/salonjuegos2.jpg
+A	media/share.png
+A	media/titleMenu.png
+A	media/titulo.png!w700wp
+A	media/user.png
+A	media/userDos.png
+A	media/zofia.jpg
+A	menu.html
+A	novedades.css
+A	novedades.html
+A	novedades.js
+A	resderva.html
+A	reserva.css
+A	reserva1.css
+A	reserva1.html
+A	sobre_nostros.html
+
+[33mcommit fa66d6010a2ab0ba4a63f7d3b90b12b0a261d208[m
+Author: JozuUriarte <161413033+JozuUriarte@users.noreply.github.com>
+Date:   Thu Oct 24 10:04:14 2024 -0400
+
+    Initial commit
+
+A	README.md
