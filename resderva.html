@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="reserva.css">
-    <title>Document</title>
+    <title>Eventos</title>
 </head>
 <body>
    <!--navegacion-->    
@@ -22,7 +23,7 @@
     </nav>
 </nav>
     <!--descripcion-->
-    <section class="infs">
+    <section class="infsM">
         <div class="inf">
             <h1>EVENTOS</h1>
 
@@ -32,29 +33,29 @@
     <br>
     <br>
     <!--cartas 1-->
-    <section class="cards">
-        <div class="card">
+    <section class="cards-eventos">
+        <div class="card-evento">
             <button class="openModal" data-modal="modal12"  style="font-family: 'Playfair Display', serif; background-color: black; color: rgb(194, 194, 36);">
                 <h2>"Eventos corporativos o de empresas"</h2>
                 <img src="media/negociopag.webp" alt="Imagen 1">
             </button>
             
         </div>
-        <div class="card">
+        <div class="card-evento">
             <button class="openModal" data-modal="modal13"  style="font-family: 'Playfair Display', serif; background-color: black; color: rgb(194, 194, 36);">
                 <h2>"Eventos para bodas"</h2>
                 <img src="media/boda11.webp" alt="Imagen 1">
             </button>
         </div>
-        <div class="card">
+        <div class="card-evento">
             <button class="openModal" data-modal="modal14"  style="font-family: 'Playfair Display', serif; background-color: black; color: rgb(194, 194, 36);">
                 <h2>"Eventos de fiestas privadas o cumpleaños"</h2>
                 <img src="media/la-gran-fiesta.jpg" alt="Imagen 1">
             </button>
         </div>
         <!---->
-        <div id="modal12" class="modal">
-            <div class="modal-content">
+        <div id="modal12" class="modalM">
+            <div class="modalM-content">
                 <span class="close">&times;</span>
                 <img src="media/pngaaa.com-2795547.png" alt="">
                 <h2>"Paquete Ejecutivo para Eventos Corporativos"</h2>
@@ -88,8 +89,8 @@
             </div>
         </div>
         
-        <div id="modal13" class="modal">
-            <div class="modal-content">
+        <div id="modal13" class="modalM">
+            <div class="modalM-content">
                 <span class="close">&times;</span>
                 <img src="media/pngaaa.com-2795547.png" alt="">
                 <h2>"Paquete de Bodas: Un Día de Ensueño"</h2>
@@ -131,8 +132,8 @@
             </div>
         </div>
         
-        <div id="modal14" class="modal">
-            <div class="modal-content">
+        <div id="modal14" class="modalM">
+            <div class="modalM-content">
                 <span class="close">&times;</span>
                 <img src="media/pngaaa.com-2795547.png" alt="">
                 <h2>Paquete de Cumpleaños y Fiestas Sociales: Celebra a lo Grande</h2>
@@ -193,46 +194,53 @@ Especifique su paquete al momento de reservar en la pestaña "RESERVAS"
     <br>
     <!--cartas2-->
     <section class="cards3">
-        <div class="card3">
-            <h2>Jardin al aire libre</h2>
-        </div>
-        <div class="card3">
-            <h2>Salon privado</h2>
-        </div>
-        <div class="card3">
-            <h2>Patio de juegos</h2>
-        </div>
+        
+        
+        
 
     </section>
     <!--cartas3-->
-    <section class="cards2">
-        <div class="card2">
-            <img class="first" src="media/boda222.jpg" alt="Imagen 1">
-            <img class="second" src="media/boda333.jpg" alt="Imagen 2">
-            <p>Descubre nuestro encantador jardín. Rodeado de vegetación exuberante, ofrece un ambiente elegante y acogedor ideal para bodas, aniversarios y reuniones corporativas.
+    <section class="cards-eventosDos">
+        <div class="card-eventosDos">
+            <div class="sub-eventos">
+                <h2>Jardin al aire libre</h2>
+            </div>
+            <div class="conteiner-eventos">
+                <img class="first" src="media/boda222.jpg" alt="Imagen 1">
+                <img class="second" src="media/boda333.jpg" alt="Imagen 2">
+                <p>Descubre nuestro encantador jardín. Rodeado de vegetación exuberante, ofrece un ambiente elegante y acogedor ideal para bodas, aniversarios y reuniones corporativas.
 
                 Con iluminación ambiental que crea un ambiente mágico por la noche y cómodos espacios para tus invitados, nuestro jardín se adapta a cualquier tipo de celebración. Además, nuestro equipo está listo para ofrecerte un menú delicioso que hará de tu evento una experiencia inolvidable.
                 
                 ¡Ven y haz que tu próximo evento sea verdaderamente especial en nuestro hermoso jardín!
                 
                 </p>
-            
+            </div>
         </div>
-        <div class="card2">
-            <img class="first" src="media/salon11.jpg" alt="Imagen 1">
-            <img class="second" src="media/salon22.jpg" alt="Imagen 2">
-            <p>Descubre nuestro elegante salón, un espacio versátil ideal para bodas, conferencias y celebraciones privadas. Con capacidad para [número de personas], ofrece un ambiente acogedor y sofisticado, complementado con iluminación suave y decoración moderna.
+        <div class="card-eventosDos">
+            <div class="sub-eventos">
+                <h2>Salon privado</h2>
+            </div>
+            <div class="conteiner-eventos">
+                <img class="first" src="media/salon11.jpg" alt="Imagen 1">
+                <img class="second" src="media/salon22.jpg" alt="Imagen 2">
+                <p>Descubre nuestro elegante salón, un espacio versátil ideal para bodas, conferencias y celebraciones privadas. Con capacidad para [número de personas], ofrece un ambiente acogedor y sofisticado, complementado con iluminación suave y decoración moderna.
 
                 Nuestro equipo de catering te brindará un menú personalizado para hacer de tu evento una experiencia inolvidable. ¡Ven y convierte tu ocasión especial en un momento memorable!</p>
+            </div>
         </div>
-        <div class="card2">
-            <img class="first" src="media/salonjuegos.jpg" alt="Imagen 1">
-            <img class="second" src="media/salonjuegos2.jpg" alt="Imagen 2">
-            <p>Bienvenido a nuestro vibrante salón de juegos, el lugar ideal para fiestas infantiles. Diseñado para entretener a los más pequeños, este espacio seguro y divertido cuenta con áreas de juego y actividades emocionantes.
+        <div class="card-eventosDos">
+            <div class="sub-eventos">
+                <h2>Patio de juegos</h2>
+            </div>
+            <div class="conteiner-eventos">
+                <img class="first" src="media/salonjuegos.jpg" alt="Imagen 1">
+                <img class="second" src="media/salonjuegos2.jpg" alt="Imagen 2">
+                <p>Bienvenido a nuestro vibrante salón de juegos, el lugar ideal para fiestas infantiles. Diseñado para entretener a los más pequeños, este espacio seguro y divertido cuenta con áreas de juego y actividades emocionantes.
 
                 Ofrecemos paquetes de fiesta que incluyen menús deliciosos y opciones de entretenimiento, garantizando una celebración inolvidable. ¡Celebra la próxima fiesta de tu hijo con nosotros y deja que la diversión comience!</p>
+            </div>
         </div>
-
     </section>
 
     <!--footerss-->
@@ -268,6 +276,8 @@ Especifique su paquete al momento de reservar en la pestaña "RESERVAS"
   
       </footer>
     <script src="events.js"></script>
+    <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+
 
 </body>
 </html>

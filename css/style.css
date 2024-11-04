@@ -574,7 +574,7 @@ img {vertical-align: middle;}
 }
 .container-form{
   display: grid;
-  grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+  grid-template-columns: repeat(auto-fit,minmax(500px,1fr));
   margin-top: 80px;
   padding-bottom: 100px;
 }
@@ -610,4 +610,221 @@ img {vertical-align: middle;}
 }
 .container-form .formulario button:hover {
   background-color: #002508;
+}
+
+/*MIGUEL EVENTOS */
+
+/*informacion1*/
+.infsM{
+  width: 100%;
+  
+  height: 300px;
+  margin-top: 100px;
+   
+}
+
+@keyframes textColorChange{
+  0%{ color: yellow; }
+  50%{ color: rgb(12, 105, 34); }
+  100%{ color: yellow;}
+}
+.infsM h1{
+  background-image: url(../media/jardin.jpg);
+  background-size: cover; /* Para cubrir toda la pantalla */
+  background-position: center; /* Centrar la imagen */
+  font-family: 'Playfair Display', serif; /* Fuente elegante para el título */
+  font-size: 220px; /* Tamaño del título */
+  text-align: center; /* Alinear al centro */
+  color: #4e0a60; /* Color del texto */
+  margin-top: 50px; /* Espacio superior */
+  width: 100%;
+  height: 300PX;
+  animation: textColorChange 3s infinite;
+}
+
+@media screen and (max-width:1000px){
+.infs h1{
+  background-image: url(../media/jardin.jpg);
+  background-size: cover; /* Para cubrir toda la pantalla */
+  background-position: center; /* Centrar la imagen */
+  font-family: 'Playfair Display', serif; /* Fuente elegante para el título */
+  font-size: 100px; /* Tamaño del título */
+  text-align: center; /* Alinear al centro */
+  color: #4e0a60; /* Color del texto */
+  margin-top: 50px; /* Espacio superior */
+  width: 100%;
+  height: 300PX;
+  animation: textColorChange 3s infinite;
+}
+}
+
+
+/*cartas1*/
+.cards-eventos{
+width: 90%;
+max-width: 1200px;
+
+margin: 0 auto;
+display: grid;
+grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+padding: 60px 0;
+gap: 2em;
+
+}
+.cards-eventos .card-evento{
+width: 100%;
+border-radius: 10px;
+background-color: #000000;
+display: flex;
+flex-direction: column;
+text-align: center;
+}
+.card-evento button{
+padding: 20px;
+}
+.card-evento img{
+width: 300px;
+height: 300px;
+margin-top: 40px;
+
+}
+
+/*titulo de cartas, par error le puse cartas 3 xDDDDD*/
+
+
+
+
+/*titulo 2*/
+.infs2{
+text-align: center;
+
+}
+
+.infs2 h1{
+  background-image: url('../media/madera.jpg'); /* Cambia la ruta según sea necesario */
+  background-size: cover; /* Para cubrir toda la pantalla */
+  background-position: center; /* Centrar la imagen */
+  font-family: 'Playfair Display', serif; /* Fuente elegante para el título */
+  font-size: 40px; /* Tamaño del título */
+  text-align: center; /* Alinear al centro */
+  color: #ffbd4a; /* Color del texto */
+  height: 100px;
+  width: 500px;
+  padding-top: 50px;
+  margin-left: auto;
+margin-right: auto;
+  
+}
+
+/*cartas 2*/
+.cards-eventosDos{
+width: 90%;
+max-width: 1200px;
+margin: 0 auto;
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+padding: 60px 0;
+gap: 2em;
+}
+.cards-eventosDos .card-eventosDos{
+padding-bottom: 2.5em;
+width: 100%;
+border-radius: 1em;
+height: 500px;
+box-shadow: 0 0 6px rgba(0 , 0, 0, .5);
+display: flex;
+flex-direction: column;
+text-align: center;
+
+}
+
+
+.conteiner-eventos img{
+width: 300px;
+height: 300px;
+margin-top: 40px;
+}
+.conteiner-eventos{
+height: 200px;
+background-position: center top;
+background-size: cover;
+border-radius: 1em 1em 0 0;
+
+}
+
+
+/*transcicion*/
+.conteiner-eventos {
+overflow: hidden;
+position: relative;
+width: 95%;
+margin: 10px auto;
+padding-bottom: 100%;
+}
+.conteiner-eventos img {
+  margin: 10px;
+  width: 95%;
+  height: 200px;
+  transition: opacity 0.3s ease;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.conteiner-eventos p{
+position: relative;
+  color: #000000;
+  margin-top: 250px;
+  text-align: center;
+}
+
+.conteiner-eventos img.second {
+  opacity: 0; /* Comienza oculta */
+}
+.conteiner-eventos:hover img.first {
+  opacity: 0; /* Oculta la primera imagen */
+}
+.conteiner-eventos:hover img.second {
+  opacity: 1; /* Muestra la segunda imagen */
+}
+/*modal-----------------------------*/
+
+
+.modalM {
+  display: none; /* Oculto por defecto */
+  position: fixed; /* Posicionado sobre la pantalla */
+  z-index: 1; /* Se coloca sobre otros elementos */
+  left: 0;
+  top: 0;
+  width: 100%; /* Ancho completo */
+  height: 100%; /* Alto completo */
+ 
+  
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro */
+  
+}
+
+.modalM-content {
+  background-color: #000000;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50%; /* Ancho del modal */
+  max-width: 600px; /* Ancho máximo */
+  height: 800px; /* Alto máximo */
+  overflow-y: auto; /* Habilita scroll vertical si es necesario */
+  color: #ffbd4a;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
 }
