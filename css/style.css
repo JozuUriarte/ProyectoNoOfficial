@@ -815,15 +815,15 @@ position: relative;
   color: #ffbd4a;
 }
 
-.close {
+.closeM {
   color: #aaa;
   float: right;
   font-size: 28px;
   font-weight: bold;
 }
 
-.close:hover,
-.close:focus {
+.closeM:hover,
+.closeM:focus {
   color: black;
   text-decoration: none;
   cursor: pointer;

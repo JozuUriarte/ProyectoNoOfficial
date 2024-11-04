@@ -1,11 +1,11 @@
 // Obtener todos los modales
-var modals = document.querySelectorAll('.modal');
+var modals = document.querySelectorAll('.modalM');
 
 // Obtener todos los botones que abren los modales
 var buttons = document.querySelectorAll('.openModal');
 
 // Obtener el elemento <span> que cierra los modales
-var closeButtons = document.getElementsByClassName("close");
+var closeButtons = document.getElementsByClassName("closeM");
 
 // Cuando el usuario hace clic en cualquier botón, se abre el modal correspondiente
 buttons.forEach(function(button) {
@@ -18,7 +18,7 @@ buttons.forEach(function(button) {
 // Cuando el usuario hace clic en <span> (x), se cierra el modal correspondiente
 Array.from(closeButtons).forEach(function(closeButton) {
     closeButton.onclick = function() {
-        this.closest('.modal').style.display = "none"; // Oculta el modal correspondiente
+        this.closest('.modalM').style.display = "none"; // Oculta el modal correspondiente
     }
 });
 
