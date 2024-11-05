@@ -116,36 +116,36 @@ nav .active{
 }
 /*novedades*/
 .nov{
-    width: 100%;
-    
-    height: 150px;
-    margin-top: 150px;
-    background-color: rgb(191, 84, 84);   
+  width: 100%;
+  
+  height: 150px;
+  margin-top: 10px;
+  background-color: rgb(191, 84, 84);   
 }
 .nov h1{
-    background-image: url(media/cartel.avif);
-    background-size: 100% 300px; /* Para cubrir toda la pantalla */
-    background-position: center; /* Centrar la imagen */
-    font-family: 'Playfair Display', serif; /* Fuente elegante para el título */
-    font-size: 150px; /* Tamaño del título */
-    text-align: center; /* Alinear al centro */
-    color: #000000; /* Color del texto */
-    margin-top: 50px; /* Espacio superior */
+  background-image: url(media/cartel.avif);
+  background-size: 100% 300px; /* Para cubrir toda la pantalla */
+  background-position: center; /* Centrar la imagen */
+  font-family: 'Playfair Display', serif; /* Fuente elegante para el título */
+  font-size: 150px; /* Tamaño del título */
+  text-align: center; /* Alinear al centro */
+  color: #000000; /* Color del texto */
+  margin-top: 50px; /* Espacio superior */
 
 }
 .nov1 img{
-  width: 100%;
-  height: 300px;
-  background-color: aqua;
+max-width: 100%;
+height: auto;
+background-color: aqua;
 
 }
 /*carusel*/
 .carrousel{
-    width: 100%;
-    
-    height: 600px;
-    margin-top: 70px;
-    background-color: rgb(255, 255, 255);   
+  width: 100%;
+  
+  height: 600px;
+  margin-top: 70px;
+  background-color: rgb(255, 255, 255);   
 }
 /*css.carrusel*/
 .mySlides {display: none}
@@ -153,247 +153,250 @@ img {vertical-align: middle;}
 
 /* Slideshow container */
 .slideshow-container {
-    max-width: 90%;
-    max-height: 30%;
-    position: relative;
-    margin: auto;
-    margin-top: 10px; /* Añadir un margen superior igual a la altura del nav */
-    z-index: 1; /* Asegura que el carrusel esté por debajo del nav */
+  max-width: 100%;
+  max-height: 30%;
+  position: relative;
+  margin: auto;
+  margin-top: 10px; /* Añadir un margen superior igual a la altura del nav */
+  z-index: 1; /* Asegura que el carrusel esté por debajo del nav */
 }
 
 /* Next & previous buttons */
 .prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 16px;
-  margin-top: -22px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
+cursor: pointer;
+position: absolute;
+top: 50%;
+width: auto;
+padding: 16px;
+margin-top: -22px;
+color: white;
+font-weight: bold;
+font-size: 18px;
+transition: 0.6s ease;
+border-radius: 0 3px 3px 0;
+user-select: none;
 }
 
 /* Position the "next button" to the right */
 .next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
+right: 0;
+border-radius: 3px 0 0 3px;
 }
 
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+background-color: rgba(0,0,0,0.8);
 }
 
 /* Caption text */
 .text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
+color: #f2f2f2;
+font-size: 15px;
+padding: 8px 12px;
+position: absolute;
+bottom: 8px;
+width: 100%;
+text-align: center;
 }
 
 /* Number text (1/3 etc) */
 .numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
+color: #f2f2f2;
+font-size: 12px;
+padding: 8px 12px;
+position: absolute;
+top: 0;
 }
 
 /* The dots/bullets/indicators */
 .dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #0a0a0a;
-  border-radius: 50%;
-  display: inline-block;
-  
-  transition: background-color 0.6s ease;
+cursor: pointer;
+height: 15px;
+width: 15px;
+margin: 0 2px;
+background-color: #0a0a0a;
+border-radius: 50%;
+display: inline-block;
+
+transition: background-color 0.6s ease;
 }
 
 .active, .dot:hover {
-  background-color: #717171;
+background-color: #717171;
 }
 
 /* Fading animation */
 .fade {
-  animation-name: fade;
-  animation-duration: 1.5s;
+animation-name: fade;
+animation-duration: 1.5s;
 }
 
 @keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
+from {opacity: .4} 
+to {opacity: 1}
 }
 
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
-  .prev, .next,.text {font-size: 11px}
+.prev, .next,.text {font-size: 11px}
 }
 /*comentarios*/
 
 
 .information{
-    display: grid;
-    grid-template-columns: 1fr 2fr;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
 }
-/*no sirve igual que yo xD*/
-.information .izquierda{
-    width: 70%;
-    background-color: rgb(69, 42, 165);
-    margin: 10px;
-    height: 300px;
-}
- .dere .dereuno{
-    background-color: chartreuse;
-    margin: 10px;
-    height: 95px;
-}
-/*no sirve*/
+
 
 
 /*comentarios*/
 
 
 .information2{
-  display: grid;
-  grid-template-columns: 1fr 2fr;
+display: grid;
+grid-template-columns: 2fr 3fr;
 }
 .information2 .izquierda2{
-  width: 95%;
-  background-color: brown;
-  margin: 10px;
-  height: 580px;
+width: 100%;
+border-radius: 10px;
+background-color: #c52f2f;
+display: flex;
+flex-direction: column;
+text-align: center;
 }
 .dere2 .dereuno2{
-  background-color: chartreuse;
-  margin: 10px;
-  height: 95px;
+background-color: chartreuse;
+margin: 10px;
+height: 95px;
 }
-
+/*-----------------------------------------------------------*/
 /*3 cartas*/
 .cards .card{
-    
-    background-color: black;
-    margin: 90px;
-    height: 300px;
-    width: 75%;
+  
+width: 100%;
+border-radius: 10px;
+background-color: #000000;
+display: flex;
+flex-direction: column;
+text-align: center;
 }
 .cards{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+width: 90%;
+max-width: 1200px;
+margin: 0 auto; /* Centra el contenedor */
+display: grid;
+grid-template-columns: repeat(4, 1fr); /* Define 4 columnas de igual tamaño */
+padding: 60px 0;
+gap: 2em; /* Espacio entre las columnas */
 }
+/*------------------------------------------------------------------------------------*/
 /*3 cartas transcicion*/
 .card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+transform: translateY(-10px);
+box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 /*cartas segunda fila*/
 .cards2 .card2{
-    
-  background-color: rgb(0, 0, 0);
-  margin: 90px;
-  height: 350px;
-  width: 75%;
+  
+width: 100%;
+border-radius: 10px;
+background-color: #000000;
+display: flex;
+flex-direction: column;
+text-align: center;
+
+height: 400px;
 }
 .cards2{
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr ;
+display: grid;
+grid-template-columns: 1fr 1fr 1fr ;
 }
- /*-----------estilo modal--------------------------------------*/
- .card img {
-  max-width: 100%;
-  border-radius: 5px;
+/*-----------estilo modal--------------------------------------*/
+.card img {
+object-fit: cover;
+max-width: 100%;
+border-radius: 5px;
 }
 
 .modal {
-  display: none; /* Oculto por defecto */
-  position: fixed; /* Posicionado sobre la pantalla */
-  z-index: 1; /* Se coloca sobre otros elementos */
-  left: 0;
-  top: 0;
-  width: 100%; /* Ancho completo */
-  height: 100%; /* Alto completo */
-  overflow: auto; /* Habilita scroll si es necesario */
-  background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro */
+display: none; /* Oculto por defecto */
+position: fixed; /* Posicionado sobre la pantalla */
+z-index: 1; /* Se coloca sobre otros elementos */
+left: 0;
+top: 0;
+width: 100%; /* Ancho completo */
+height: 100%; /* Alto completo */
+overflow: auto; /* Habilita scroll si es necesario */
+background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro */
 }
 
 .modal-content {
-  background-color: #000000;
-  margin: 15% auto;
-  padding: 20px;
-  border: 1px solid #888;
-  width: 50%; /* Ancho del modal */
-  max-width: 600px; /* Ancho máximo */
-  max-height: 80%; /* Alto máximo */
-  overflow-y: auto; /* Habilita scroll vertical si es necesario */
-  color: gold;
+background-color: #000000;
+margin: 15% auto;
+padding: 20px;
+border: 1px solid #888;
+width: 50%; /* Ancho del modal */
+max-width: 600px; /* Ancho máximo */
+max-height: 80%; /* Alto máximo */
+overflow-y: auto; /* Habilita scroll vertical si es necesario */
+color: gold;
 }
 
 .close {
-  color: #aaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
+color: #aaa;
+float: right;
+font-size: 28px;
+font-weight: bold;
 }
 
 .close:hover,
 .close:focus {
-  color: black;
-  text-decoration: none;
-  cursor: pointer;
+color: black;
+text-decoration: none;
+cursor: pointer;
 }
 /*cards2*/
 .card2 img {
-  max-width: 100%;
-  border-radius: 5px;
-  height: 180px;
+max-width: 100%;
+border-radius: 5px;
+height: 180px;
 }
 
 /*transision 2*/
 .card2:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+transform: translateY(-10px);
+box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 /*acordeon comentarios*/
 
 .accordion {
-    width: 80%;
-    margin: 20px auto;
+  width: 80%;
+  margin: 20px auto;
 }
 
 .accordion-item {
-    border: 1px solid #ccc;
-    margin-bottom: 10px;
-    border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  border-radius: 5px;
 }
 
 .accordion-header {
-    background-color: #000000;
-    padding: 15px;
-    cursor: pointer;
-    color: rgb(191, 191, 19);
+  background-color: #000000;
+  padding: 15px;
+  cursor: pointer;
+  color: rgb(191, 191, 19);
 }
 
 .accordion-header h3 {
-    margin: 0;
+  margin: 0;
 }
 
 .accordion-content {
-    display: none; /* Oculto por defecto */
-    padding: 15px;
-    background-color: #fafafa;
-    border-top: 1px solid #ccc;
+  display: none; /* Oculto por defecto */
+  padding: 15px;
+  background-color: #fafafa;
+  border-top: 1px solid #ccc;
 }
 
 
