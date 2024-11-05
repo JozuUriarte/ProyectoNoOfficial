@@ -642,8 +642,8 @@ img {vertical-align: middle;}
   animation: textColorChange 3s infinite;
 }
 
-@media screen and (max-width:1000px){
-.infs h1{
+@media screen and (max-width:800px){
+.infsM h1{
   background-image: url(../media/jardin.jpg);
   background-size: cover; /* Para cubrir toda la pantalla */
   background-position: center; /* Centrar la imagen */
@@ -828,3 +828,4 @@ position: relative;
   text-decoration: none;
   cursor: pointer;
 }
+
