@@ -567,23 +567,64 @@ img {vertical-align: middle;}
   color: #808080;
   font-size: 0.8em;
 }
-/*ESTO ES RESERVAS(PARTE DE MIGUEL)*/
+/*ESTO ES RESERVAS(PARTE DE MIGUEL Patty)*/
 /*formulario*/
+/*titulo*/
+.novmigue{
+  width: 100%;
+  
+  height: 150px;
+  margin-top: 10px;
+  background-color: rgb(191, 84, 84);   
+}
+@keyframes textColorChange2{
+  0%{ color: rgb(255, 0, 0); }
+  50%{ color: rgb(94, 25, 25); }
+  100%{ color: rgb(255, 0, 0);}
+}
+.novmigue h1{
+  background-image: url(../media/madera2.png);
+  background-size: 100% 300px; /* Para cubrir toda la pantalla */
+  background-position: center; /* Centrar la imagen */
+  background-repeat: no-repeat;
+  font-family: 'Playfair Display', serif; /* Fuente elegante para el título */
+  font-size: 150px; /* Tamaño del título */
+  text-align: center; /* Alinear al centro */
+  color: #000000; /* Color del texto */
+  margin-top: 150px; /* Espacio superior */
+  background-color: burlywood;
+  animation: textColorChange2 3s infinite;
+
+}
+.nov1migue img{
+max-width: 100%;
+height: auto;
+background-color: aqua;
+
+}
+/*fin del titulo*/
 .infs{
-  background-color: rgb(255, 255, 255);
+  background-color: transparent;
+  
 }
 .container-form{
   display: grid;
   grid-template-columns: repeat(auto-fit,minmax(500px,1fr));
-  margin-top: 80px;
+  margin-top: 150px;
   padding-bottom: 100px;
+  background-image: url(../media/mrchispa.png); /* La imagen PNG del borde */
+  background-size: 100% 100%; /* Asegura que el borde ocupe todo el formulario */
+  background-repeat: no-repeat; 
+
+
+  
 }
 .container-form .formulario{
   border: 1px solid #ccc;
   border-radius: 10px;
   padding: 50px;
   width: 48%; /* Ajusta el ancho según sea necesario */
-  background-color: white;
+  background-color: rgb(219, 202, 145);
   margin-top: 80px;  
   margin-left: auto;
   margin-right: auto;
@@ -611,6 +652,8 @@ img {vertical-align: middle;}
 .container-form .formulario button:hover {
   background-color: #002508;
 }
+
+
 
 /*MIGUEL EVENTOS */
 
