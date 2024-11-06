@@ -6,6 +6,61 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="reserva1.css">
     <title>Reservas</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> <!-- Importar jQuery -->
+
+    <script>
+      // Función para enviar el primer formulario con AJAX (reservas de mesa)
+      $(document).ready(function() {
+          $("form").submit(function(event) {
+              event.preventDefault();  // Prevenir el envío tradicional del formulario
+  
+              // Recoger los datos del formulario
+              var formData = $(this).serialize();
+  
+              // Enviar los datos al servidor con AJAX
+              $.ajax({
+                  url: "reserva.php",   // El archivo PHP al que se enviarán los datos
+                  type: "POST",         // Método de envío (POST)
+                  data: formData,       // Datos del formulario
+                  success: function(response) {
+                      if(response == "success") {
+                          alert("Reserva registrada exitosamente.");
+                      } else {
+                          alert("Hubo un problema al registrar la reserva.");
+                      }
+                  },
+                  error: function() {
+                      alert("Error al enviar la reserva.");
+                  }
+              });
+          });
+  
+          // Función para enviar el segundo formulario (reservas de salones) con AJAX
+          $("#form-salones").submit(function(event) {
+              event.preventDefault();  // Prevenir el envío tradicional del formulario
+  
+              // Recoger los datos del formulario
+              var formData = $(this).serialize();
+  
+              // Enviar los datos al servidor con AJAX
+              $.ajax({
+                  url: "reservasalones.php",   // El archivo PHP al que se enviarán los datos
+                  type: "POST",                // Método de envío (POST)
+                  data: formData,              // Datos del formulario
+                  success: function(response) {
+                      if(response == "success") {
+                          alert("Reserva de salón registrada exitosamente.");
+                      } else {
+                          alert("Hubo un problema al registrar la reserva del salón.");
+                      }
+                  },
+                  error: function() {
+                      alert("Error al enviar la reserva del salón.");
+                  }
+              });
+          });
+      });
+  </script>
 </head>
 <body>
     <!--navegacion-->    
@@ -40,15 +95,15 @@
     <div class="container-form">
         <div class="formulario">
             <h2 style="color: brown;">Reservas</h2>
-            <form action="/reservar" method="POST">
+            <form action="reserva.php" method="POST">
 
-                <label for="mesa1">Pisos disponibles:</label>
-                <select id="mesa1" name="mesa" required>
+                <label for="piso">Pisos disponibles:</label>
+                <select id="piso" name="piso" required>
                     <option value="">pisos</option>
-                    <option value="mesa1">Piso 1</option>
-                    <option value="mesa2">Piso 2</option>
-                    <option value="mesa3">Piso 3</option>
-                    <option value="mesa4">Piso 4</option>
+                    <option value="piso1">Piso 1</option>
+                    <option value="piso2">Piso 2</option>
+                    <option value="piso3">Piso 3</option>
+                    <option value="piso4">Piso 4</option>
                 </select>
                 <label for="mesa1">Mesa disponible:</label>
                 <select id="mesa1" name="mesa" required>
@@ -83,48 +138,50 @@
                 <textarea id="descripcion1" name="descripcion" rows="4" placeholder="Escribe aquí tu orden..."></textarea>
 
                 <button type="submit">Terminar Reserva</button>
+
             </form>
         </div>
 
         <div class="formulario">
             <h2 style="color: brown;">"Reservas de salones y eventos"</h2>
 
-            <form action="/otra-reserva" method="POST">
-                <label for="mesa1">Salones disponibles:</label>
-                <select id="mesa1" name="mesa" required>
-                    <option value="">Seleccione aqui</option>
-                    <option value="mesa1">Salon privado 1</option>
-                    <option value="mesa2">Salon privado 2</option>
-                    <option value="mesa3">Salon privado 3</option>
-                    <option value="mesa4">Jardin</option>
-                    <option value="mesa4">Patio de juegos</option>
-                </select>
-                <label for="mesa2">Paquetes disponibles:</label>
-                <select id="mesa2" name="mesa" required>
-                    <option value="">Seleccione un paquete de su gusto</option>
-                    <option value="mesa1">"Paquete Ejecutivo para Eventos Corporativos"</option>
-                    <option value="mesa2">"Paquete de Bodas: Un Día de Ensueño"</option>
-                    <option value="mesa3">Paquete de Cumpleaños y Fiestas Sociales:</option>
-                    <option value="mesa4">"Nuevo" Paquete para fiestas de niños</option>
-                </select>
-
-                <label for="fecha2">Fecha de la reserva:</label>
-                <input type="date" id="fecha2" name="fecha" required>
-
-                <label for="hora2">Hora de la reserva:</label>
-                <input type="time" id="hora2" name="hora" required>
-
-                <label for="comensales2">Número de comensales:</label>
-                <input type="number" id="comensales2" name="comensales" min="1" max="10" required>
-
-                <label for="correo2">Correo electrónico:</label>
-                <input type="email" id="correo2" name="correo" required>
-
-                <label for="descripcion2">Descripción de la orden:</label>
-                <textarea id="descripcion2" name="descripcion" rows="4" placeholder="Escribe aquí tu orden..."></textarea>
-
-                <button type="submit">Terminar Reserva</button>
-            </form>
+            <form id="form-salones" action="reservasalones.php" method="POST">
+              <label for="salon">Salones disponibles:</label>
+              <select id="salon" name="salon" required>
+                  <option value="">Seleccione aqui</option>
+                  <option value="Salon privado 1">Salon privado 1</option>
+                  <option value="Salon privado 2">Salon privado 2</option>
+                  <option value="Salon privado 3">Salon privado 3</option>
+                  <option value="Jardin">Jardin</option>
+                  <option value="Patio de juegos">Patio de juegos</option>
+              </select>
+      
+              <label for="paquetes">Paquetes disponibles:</label>
+              <select id="paquetes" name="paquetes" required>
+                  <option value="">Seleccione un paquete de su gusto</option>
+                  <option value="Paquete Ejecutivo para Eventos Corporativos">Paquete Ejecutivo para Eventos Corporativos</option>
+                  <option value="Paquete de bodas: Un dia de ensueño">Paquete de Bodas: Un Día de Ensueño</option>
+                  <option value="Paquete de Cumplaños y Fiestas Sociales">Paquete de Cumpleaños y Fiestas Sociales</option>
+                  <option value="Nuevo paquete para fiesta de niños">Nuevo Paquete para fiestas de niños</option>
+              </select>
+      
+              <label for="fecha2">Fecha de la reserva:</label>
+              <input type="date" id="fecha2" name="fecha2" required>
+      
+              <label for="hora2">Hora de la reserva:</label>
+              <input type="time" id="hora2" name="hora2" required>
+      
+              <label for="comensales2">Número de comensales:</label>
+              <input type="number" id="comensales2" name="comensales2" min="1" max="10" required>
+      
+              <label for="correo2">Correo electrónico:</label>
+              <input type="email" id="correo2" name="correo2" required>
+      
+              <label for="descripcion2">Descripción de la orden:</label>
+              <textarea id="descripcion2" name="descripcion2" rows="4" placeholder="Escribe aquí tu orden..."></textarea>
+      
+              <button type="submit">Terminar Reserva</button>
+          </form>
         </div>
     </div>
            

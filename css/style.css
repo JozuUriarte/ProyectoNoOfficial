@@ -872,3 +872,53 @@ position: relative;
   cursor: pointer;
 }
 
+/*para el php abrir reservas*/
+
+.reservas_ocntainerphp {
+  background-color: rgba(30, 39, 39, 0.3);
+  padding: 20px;
+  border-radius: 8px;
+  width: 500px;
+  height: 400px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Alinea los botones a la izquierda */
+}
+
+.tile_reservasphp {
+  font-size: 30px;
+  color: #860f15;
+  background-color: #000000d3;
+  text-align: center;
+  width: 100%; /* Hace que el título ocupe el ancho completo del contenedor */
+}
+
+.botones-reservasphp {
+  display: flex;
+  flex-direction: column; /* Coloca los botones en una columna */
+  align-items: flex-start; /* Alinea los botones a la izquierda */
+  gap: 10px; /* Espacio entre los botones */
+}
+
+.btn-reservas {
+  width: 200px; /* Ajusta el ancho del botón */
+  padding: 10px;
+  background-color: #860f15;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 40px 0; /* Espacio entre los botones */
+  text-align: center; /* Alinea el texto dentro del botón a la izquierda */
+  text-decoration: none;
+}
+.btn-reservas:hover{
+  background-color: #ee0a0ad7;
+}
+/*php waa*/
+.form-containerJ{
+  width: 500px;
+  text-align: center;
+
+}
